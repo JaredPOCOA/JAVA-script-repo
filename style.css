@@ -1,0 +1,188 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header and Navbar */
+header {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #d1c4e9;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.search input {
+    border: none;
+    border-bottom: 1px solid #333;
+    padding: 5px;
+    outline: none;
+}
+
+/* Showcase Section */
+.showcase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f4f4f9;
+}
+
+.image-card {
+    width: 30%;
+    text-align: center;
+}
+
+.image-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.image-card h2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.center-text h1 {
+    color: #8a6d3b;
+    font-size: 2em;
+}
+
+/* Team Info Section */
+.team-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.team-image {
+    width: 40%;
+}
+
+.team-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.text-info p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* Latest News Section */
+.latest-news {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f8f8f8;
+}
+
+.latest-news h2 {
+    font-size: 2em;
+    color: #c2185b;
+    margin-bottom: 20px;
+}
+
+.news-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.news-card {
+    width: 30%;
+    text-align: center;
+}
+
+.news-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.news-card p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+/* Game Schedule Section */
+.game-schedule {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f4f4f9;
+}
+
+.game-schedule h2 {
+    font-size: 2em;
+    color: #c2185b;
+    margin-bottom: 20px;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.event {
+    width: 80%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.event h3 {
+    font-size: 1.2em;
+    color: #8a6d3b;
+}
+
+.event button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #c2185b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.event button:hover {
+    background-color: #ad1457;
+}
