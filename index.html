@@ -20,32 +20,46 @@
 
     <main>
         <section class="hero">
-            <div class="hero-text">
-                <h1>Experience the Spirit of SBC</h1>
+            <h1>Experience the Spirit of SBC</h1>
+            <div class="hero-content">
                 <p>At SBC High School, we strive to create a dynamic environment where students can excel academically and athletically. Our website is a hub for sports enthusiasts, event lovers, and community supporters. Join us in our mission to inspire and empower the next generation of leaders.</p>
+                <img src="https://static.wixstatic.com/media/11062b_ee63e026e97f44009006bca59d8831ff~mv2.jpeg/v1/fill/w_427,h_422,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_ee63e026e97f44009006bca59d8831ff~mv2.jpeg"%20alt="Track%20runners%20starting%20a%20race">
             </div>
-            <img src="https://static.wixstatic.com/media/11062b_ee63e026e97f44009006bca59d8831ff~mv2.jpeg/v1/fill/w_427,h_422,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_ee63e026e97f44009006bca59d8831ff~mv2.jpeg" alt="Track runners starting a race">
         </section>
 
         <section class="event-calendar">
             <h2>Event Calendar</h2>
             <div class="event">
                 <p><strong>Mon, Dec 09</strong> - Under the Stars: Community Concert Night / SBC High School Stadium</p>
-                <button>Buy Tickets</button>
+                <button>View</button>
             </div>
             <div class="event">
                 <p><strong>Mon, Dec 09</strong> - Summer Sports Leadership Camp Kickoff / SBC High School Auditorium</p>
-                <button>RSVP</button>
+                <button>View</button>
             </div>
             <div class="event">
                 <p><strong>Mon, Dec 09</strong> - Quarterly Sports Booster Club Meeting / SBC High School Gymnasium</p>
-                <button>RSVP</button>
+                <button>View</button>
             </div>
         </section>
 
         <section class="follow-us">
             <h2>Follow Us</h2>
-            <!-- Social media icons and links will be added here -->
+            <div class="slider-container">
+                <button class="arrow left-arrow" onclick="scrollSlider(-1)">&#8249;</button>
+                <div class="slider">
+                    <div class="slider-item" onclick="openLinkWithAlert('https://www.instagram.com/southbronxcommunity/')">
+                        <img src="Opera Snapshot_2024-11-08_212106_www.instagram.com.png" alt="Instagram 1">
+                    </div>
+                    <div class="slider-item" onclick="openLinkWithAlert('https://www.instagram.com/southbronxcommunity/')">
+                        <img src="Opera Snapshot_2024-11-13_190503_www.instagram.com.png" alt="Instagram 2">
+                    </div>
+                    <div class="slider-item" onclick="openLinkWithAlert('https://www.instagram.com/southbronxcommunity/')">
+                        <img src="Opera Snapshot_2024-11-13_190520_www.instagram.com.png" alt="Instagram 3">
+                    </div>
+                </div>
+                <button class="arrow right-arrow" onclick="scrollSlider(1)">&#8250;</button>
+            </div>
         </section>
     </main>
 
@@ -64,5 +78,23 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function openLinkWithAlert(url) {
+            if (confirm("You are about to leave our site and go to an external page. Do you wish to continue?")) {
+                window.location.href = url;
+            }
+        }
+
+        function scrollSlider(direction) {
+            const slider = document.querySelector('.slider');
+            const scrollAmount = 200 * direction;
+            slider.scrollBy({
+                top: 0,
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 </html>
